@@ -1,0 +1,30 @@
+/* Make body and main flex containers */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* To make layout fill the screen */
+}
+
+main {
+  display: flex;
+  flex: auto; /* Fills remaining vertical space */
+  flex-direction: row; /* Layout article and aside side by side */
+}
+
+/* Article and Aside proportions */
+article {
+  flex: 2;
+  overflow-y: auto; /* Allows scrolling if content is long */
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto; /* Allows scrolling if content is long */
+}
+
+/* Optional: Header and Footer fixed size */
+header,
+footer {
+  flex: none;
+  height: 80px; /* You can customize this */
+}
